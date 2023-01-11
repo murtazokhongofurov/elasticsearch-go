@@ -1,10 +1,8 @@
 package domain
 
-import (
-	"errors"
-)
+import "errors"
 
 var (
-	errorNotFount = errors.New("not found")
-	errorConflict = errors.New("conflict")
+	ErrNotFound = errors.New("not found")
+	ErrConflict = errors.New("conflict")
 )

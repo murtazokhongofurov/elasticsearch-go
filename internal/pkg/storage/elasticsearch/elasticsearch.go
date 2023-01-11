@@ -56,3 +56,7 @@ func (e *ElasticSearch) CreateIndex(index string) error {
 
 	return nil
 }
+
+type document struct {
+	Source interface{} `json:"_source"`
+}
